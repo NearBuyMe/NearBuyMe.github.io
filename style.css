@@ -1,0 +1,410 @@
+body {
+    padding:0;
+    margin:0;
+    font-weight: 380;
+    outline: none !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #227be0;
+    text-align: left;
+    color: white;
+}
+
+header {
+    background: #227be0;
+    /*padding-top:30px;*/
+    min-height:70px;
+    /*border-bottom:#d80404 3px solid;*/
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    font-weight: 380;
+    outline: none !important;
+    overflow: hidden;
+    text-align: left;
+    padding: 0px;
+}
+
+header .majorNavBarItem {
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 35px;
+    padding: 5px;
+}
+
+header .minorNavBarItem {
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 380;
+    font-size: large;
+    padding: 20px;
+    list-style-type: none;
+}
+
+li a:hover {
+    color: lightsteelblue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    text-align: left;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li .bisonImage {
+    padding-left: 10px;
+}
+
+nav {
+    display: inline-block;
+}
+
+#navbar {
+    font-weight: 400;
+    outline: none !important;
+}
+
+#banner {
+    padding-top: 100px;
+}
+
+.largeBox {
+    margin-bottom: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    text-align: center;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(223, 223, 223);
+    border-radius: 18px;
+    width: 90vw;
+    height: 300px;
+    padding: 10px;
+    overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#items {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+#dashboard {
+    padding-left: 12px;
+    padding-top: 15px;
+    padding-bottom: 250px;
+    padding-top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+#hiddenInfo.animate div *:nth-child(1){ animation-delay: .1s; }
+#hiddenInfo.animate div *:nth-child(2){ animation-delay: .15s; }
+#hiddenInfo.animate div *:nth-child(3){ animation-delay: .2s; }
+#hiddenInfo.animate div *:nth-child(4){ animation-delay: .25s; }
+#hiddenInfo.animate div *:nth-child(5){ animation-delay: .3s; }
+#hiddenInfo.animate div *:nth-child(6){ animation-delay: .35s; }
+#hiddenInfo.animate div *:nth-child(7){ animation-delay: .4s; }
+#hiddenInfo.animate div *:nth-child(8){ animation-delay: .45s; }
+#hiddenInfo.animate div *:nth-child(9){ animation-delay: .5s; }
+#hiddenInfo.animate div * {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: slide-up-p;
+  -webkit-animation-name: slide-up-p;
+  animation-duration: .6s;
+  -webkit-animation-duration: .6s;
+}
+
+@keyframes crossfade-image {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  40%, 60% {
+    transform: scale(.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-up-p {
+  from {
+    transform: scale(0.75) translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0%);
+  }
+}
+
+/* Large Top Boxes */
+.largeBox, .largeBox * {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+.largeDashboardBox {
+  margin-bottom: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(223, 223, 223);
+  border-radius: 18px;
+  width: calc(50vw - 30px);
+  height: calc(100vw - 30px);
+  max-width: 350px;
+  max-height: 300px;
+}
+.largeBoxInner img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.largeBoxInner {
+  max-height: 850px;
+  width: 800px;;
+  text-align: center;
+  min-height: 0%;
+  padding-top: 0px;
+  position: absolute;
+  bottom: 0;
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: rgb(223, 223, 223);
+  background-color: white;
+  color: var(--text-color);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.largeBoxInner h1 {
+    color: gray;
+    padding: 5px;
+    font-size: 20px;
+}
+
+h2 {
+    color: black
+}
+
+.largeBoxInner h2 {
+    color: black;
+    padding: 1px;
+}
+
+.largeBoxInner h3 {
+    color: black;
+    font-style: italic;
+    padding: 2px;
+}
+
+#items a {
+    max-width: 350px;
+}
+
+.largeBox:hover .largeBoxInner {
+  max-height: calc(100% - 120px);
+}
+
+.blogBox:hover img {
+  width: 60px;
+  height: 60px;
+  top: -75px;
+}
+
+.largeBox h1 {
+    padding: 5px;
+    margin: 0;
+    max-height: 200px;
+    color: black;
+}
+
+.divider {
+    height: 860px;
+    width: 262px;
+    float: left;
+    border: solid lightgray 1px;
+}
+
+.divider h1 {
+    text-align: center;
+}
+
+.blogs {
+    text-align: center;
+}
+
+.blogBox {
+    margin: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(223, 223, 223);
+    border-radius: 18px;
+    width: calc(50vw - 30px);
+    height: 150px;
+    width: 1600px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    margin-top: 10px;
+}
+
+.blogBox h1 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: black;
+}
+
+.blogBox h4 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: navy;
+}
+
+.blogBox p {
+    margin-top: 3px;
+    color: rgb(109, 104, 104);
+    padding: 5px;
+}
+
+#yes {
+    color: green;
+    padding: 10px;
+    font-size: 25px;
+    font-family: HelveticaNeue-CondensedBold,Futura-Medium,-apple-system,'Arial Rounded MT Bold',system-ui,Ubuntu,sans-serif,'Arial Unicode MS','Zapf Dingbats','Segoe UI Emoji','Segoe UI Symbol',Noto Color Emoji, NotoColorEmoji,EmojiSymbols,Symbola,Noto,'Android Emoji',AndroidEmoji,'lucida grande',tahoma,verdana,arial,AppleColorEmoji,'Apple Color Emoji';
+}
+
+#no {
+    color: red;
+    padding: 10px;
+    font-size: 25px;
+    font-family: HelveticaNeue-CondensedBold,Futura-Medium,-apple-system,'Arial Rounded MT Bold',system-ui,Ubuntu,sans-serif,'Arial Unicode MS','Zapf Dingbats','Segoe UI Emoji','Segoe UI Symbol',Noto Color Emoji, NotoColorEmoji,EmojiSymbols,Symbola,Noto,'Android Emoji',AndroidEmoji,'lucida grande',tahoma,verdana,arial,AppleColorEmoji,'Apple Color Emoji';
+}
+ul li {
+    color: black;
+    padding: 5px;
+    font-size: 19px;
+    text-align: left;
+}
+
+.blogBoxImage {
+    max-height: 125px;
+    max-width: 180px;
+    text-align: left;
+    margin-right: 5px;
+    padding: 5px;
+    float: left;
+    border-right: solid lightgrey;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.blogBoxImage img {
+    width: 166px;
+    height: 125px;
+}
+
+.createBlog .largeBox h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.classesList ul {
+    list-style: disc;
+}
+
+#classItems {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+#englishItems a {
+    display: inline-block;
+}
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color: #227be0;
+    text-align: center;
+  }
+
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+.display {
+    border: 15px solid white;
+    border-radius: 120px;
+}
+
+.li input[type=text] {
+    float: right;
+    padding: 17px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    height: 35px;
+    width: 80px;
+  }
